@@ -12,7 +12,7 @@ This is the take home project for Tango.us QE role. Tests are written in `playwr
 There are a few issues I ran into I couldn't prioritize to solve, noted below with my _assumed_ reasons.
 
 - In VSCode, I cannot get debugging working. There's an error of missing module `jest.js`. I'm guessing I have a weird environmental configuration and would need to take a bit of time to dig deeper. Since standard running works I've ignored for now.
-- I tried to add POM but ran into issues with the test hanging, and since I couldn't debug I had to abandon - no DRY code today!
+- I tried to add POM but ran into issues with the test hanging, and since I couldn't debug I had to abandon - no DRY code today! My assumption is I did something weird with the values passed in, it kept timing out on the password field.
 
 ## Future Updates
 A few things I would like to also do but don't have time for:
@@ -40,10 +40,10 @@ Business functionality like the Team Library, popping the Upgrade Modal,
 
 **Tests**
 
-- Auth/login, user can login with username & password
-- Auth/login, user login is rejected for bad email
-- Auth/login, user login is rejected for bad password
-- Auth/login, user can logout
+- Auth/login, user can login with username & password ✅
+- Auth/login, user login is rejected for bad email ✅
+- Auth/login, user login is rejected for bad password ✅
+- Auth/login, user can logout ✅
 
 - Settings, search for member
 - Settings, Guests list loads (empty currently)
