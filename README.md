@@ -1,6 +1,9 @@
 # lets-tango
 This is the take home project for Tango.us QE role. Tests are written in `playwright` with the default typescript selected.
 
+## Requirements
+- Node, v `10.20.4>`
+
 ## Getting Started
 1. Install dependencies `npm install`
 2. Install playwright if you haven't yet, `npx playwright install` (need to double check this command with a new install)
