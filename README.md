@@ -12,6 +12,7 @@ This is the take home project for Tango.us QE role. Tests are written in `playwr
 There are a few issues I ran into I couldn't prioritize to solve, noted below with my _assumed_ reasons.
 
 - In VSCode, I cannot get debugging working. There's an error of missing module `jest.js`. I'm guessing I have a weird environmental configuration and would need to take a bit of time to dig deeper. Since standard running works I've ignored for now.
+- I tried to add POM but ran into issues with the test hanging, and since I couldn't debug I had to abandon - no DRY code today!
 
 ## Future Updates
 A few things I would like to also do but don't have time for:

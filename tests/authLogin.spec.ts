@@ -52,5 +52,21 @@ test('Auth page rejects with bad username', async ({ page }) => {
 });
 
 test('User can log out', async({ page }) => {
+  await page.goto('/');
+
+  // input credentials
+  await page.getByTestId("auth.signIn.emailInput").fill(process.env.DEFAULT_EMAIL ?? "")
+  await page.getByTestId("auth.signIn.passwordInput").fill(process.env.DEFAULT_PASSWORD ?? "")
+
+  // submit!
+  await page.getByTestId("auth.signIn.submitButton").click()
+
+  // wait for the user menu so we can open it
+  await page.getByTestId("shared.workspaceSwitcher.dropdownTrigger").click()
   
+  // click logout
+  await page.getByText("Log out").click()
+
+  // assert!
+  await expect(page).toHaveTitle("Tango - Supercharge your team")
 })
